@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdgeLength="@dimen/fading_edge_length"
+    android:requiresFadingEdge="horizontal">
+    <com.example.testapplication.widgets.headingtext.HeadingTextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/text_heading"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/select_age"/>
+
+    <TextView
+        android:id="@+id/text_selected"
+        style="@style/TextLargest.HighLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/custom_picker"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="@dimen/selected_value_margin"
+        app:layout_constraintTop_toBottomOf="@+id/text_heading" />
+
+    <com.example.testapplication.widgets.custompicker.CustomPickerWidget
+        android:id="@+id/custom_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

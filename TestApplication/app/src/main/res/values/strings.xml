@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="previous">Previous</string>
+    <string name="back">back</string>
+    <string name="next">next</string>
+
+    <string name="select_age">SELECT YOUR AGE</string>
+
+    <string name="select_height">SELECT YOUR HEIGHT</string>
+
+    <string name="select_weight">SELECT YOUR WEIGHT</string>
+    <string name="selected_heading">"Hi, User. "</string>
+
+</resources>

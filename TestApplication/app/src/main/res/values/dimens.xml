@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="parent_margin">16dp</dimen>
+
+    <dimen name="fontSizeSmall">12dp</dimen>
+    <dimen name="fontSizeMedium">16dp</dimen>
+    <dimen name="fontSizeLarge">24dp</dimen>
+    <dimen name="fontSizeLargest">32dp</dimen>
+    <dimen name="age_item_width">50dp</dimen>
+    <dimen name="height_item_height">50dp</dimen>
+    <dimen name="weight_item_width">50dp</dimen>
+    <dimen name="fading_edge_length">50dp</dimen>
+    <dimen name="selected_value_margin">48dp</dimen>
+    <dimen name="vertical_medium_margin">16dp</dimen>
+
+    <dimen name="button_corner_radius">16dp</dimen>
+
+</resources>

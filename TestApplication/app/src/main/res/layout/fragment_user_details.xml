@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="UserViewModel"
+            type="com.example.testapplication.screens.viewmodel.UserViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.testapplication.widgets.headingtext.HeadingTextView
+            android:id="@+id/text_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/selected_heading"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/text_age"
+            style="@style/TextLarge.HighLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vertical_medium_margin"
+            android:text='@{"Age :" + UserViewModel.MAge}'
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_heading" />
+
+        <TextView
+            android:id="@+id/text_height"
+            style="@style/TextLarge.HighLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vertical_medium_margin"
+            android:text='@{"Height :" + UserViewModel.MHeight}'
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_age" />
+
+        <TextView
+            android:id="@+id/text_weight"
+            style="@style/TextLarge.HighLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vertical_medium_margin"
+            android:text='@{"Wieght :" + UserViewModel.MWeight}'
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_height" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
